@@ -341,7 +341,7 @@ class App:
                 return
             self.set_busy(False)
             if event == "done":
-                self.progress["value"] = 100
+                self.progress["value"] = 0
                 self.status.configure(text=f"已生成 {value.name}", fg=GREEN)
                 self.result = value
                 self.show_btn.configure(state="normal")
